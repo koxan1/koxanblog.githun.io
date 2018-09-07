@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+* {
+	padding: 0;
+  font-family: 'Bad Script', cursive;
+	margin: 0;
+
+}
+body {
+	background-color: pink;
+	width: 100%;
+	height: 200px;
+}
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 150px;
+	background: white;
+	left: -150px;
+	-moz-transition: all 300ms;
+	-webkit-transition: 300ms;
+	transition: all 300ms;
+
+}
+#sidebar.active {
+	left: 0px;
+}
+#sidebar ul li:first-child {
+	text-align: center;
+	color: black;
+	font-size: 1.3em;
+	list-style: none;
+	padding: 25px 10px 10px 10px;
+}
+#sidebar ul li:not(:first-child) {
+	margin-left: 10%;
+	width: 90%;
+	color: black;
+	font-size: 1.1em;
+	list-style: none;
+	padding: 15px 10px;
+}
+#sidebar ul li a{
+	color: black;
+	text-decoration: none;
+}
+#sidebar ul li a:hover {
+	color: pink;
+}
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 180px;
+	top: 20px;
+	background: white;
+	padding: 10px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+#sidebar .toggle-btn span {
+	display: block;
+	width: 25px;
+	height: 4px;
+	background-color: #666;
+	margin: 4px 0;
+}
+#sidebar .toggle-btn:hover{background: black}
+#sidebar .toggle-btn:hover span {background: pink}
+#main {
+	position: absolute;
+	margin-top:200px	 ;
+	height: 500px;
+	width: 1500px;
+	margin-left: 210px;
+	border: 10px solid white;
+	box-shadow: 1px 20px 120px black;
+}
+
+#main .title {
+	margin-top: 150px;
+	margin-left: 570px;
+	font-size: 3.5em;
+  font-family: 'Courgette', cursive;
+	color: white;
+
+
+}
+#main .photo {
+	width: 345px;
+	height: 300px;
+	margin-top: -260px;
+	margin-left: 170px;
+	border-radius: 180px;
+}
+#blog {
+	margin-top: 50%;
+	height: 800px;
+width: 100%;
+	background: white;
+	position: absolute;
+}
+#blog .inside {
+	font-size: 1.7em;
+	margin-left: 150px;
+	margin-top: 80px;
+}
+#today {
+	position: absolute;
+	font-size: 1.4em;
+	margin-top: 80%;
+	margin-left:0px;
+	height: 600px;
+	width: 100%;
+	background: white;
+	position: absolute;
+	text-align: center;
+}
+#today h3 {
+	text-decoration: underline;
+}
+#today p {
+
+}
